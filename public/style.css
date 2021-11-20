@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background:linear-gradient(to right,rgb(36, 9, 156) 10%,rgb(170, 2, 162));
+
+
+}
+section.chat__section {
+    width: 800px;
+    max-width: 90%;
+    background: #000000;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+   position: relative;
+   display: none;
+}
+
+
+.brand {
+    padding: 20px;
+    background:linear-gradient(to right,rgb(36, 9, 156) 10%,rgb(170, 2, 162));
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    
+}
+img{
+    border-radius:50%;
+}
+.username{
+    position: absolute;
+    right: 0%;
+    margin-right: 50px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+.username span{
+    display: inline;
+    font-size: small;
+}
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #f2f2f2;
+    margin-left: 10px;
+}
+.message__area{
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding-top: 40px;
+}
+.message__area::-webkit-scrollbar {
+	width: 20px;
+	
+}
+.message__area::-webkit-scrollbar-track {
+	background-color: #000000;
+	border-radius: 20px;
+}
+.message__area::-webkit-scrollbar-thumb{
+    background: rgb(19, 18, 18);
+    height: 10px;
+    width: 10px;
+    border-radius: 20px;
+}
+
+
+
+textarea {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: rgb(54, 54, 54);
+    position: absolute;
+    bottom: 0%;
+    color: #fff;
+}
+
+.message {
+    padding: 20px; 
+    border-radius: 4px; 
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+    color: #fff;
+}
+.incoming {
+    background: linear-gradient(to right, #2c0ac5, #0648a3);
+   
+
+}
+.outgoing {
+    background: #1e1e1f;
+    color: #fff;
+    margin-left: auto;
+}
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 14px;
+}
+input{
+    border:1px solid rgba(61, 61, 61, 0.5);
+    outline:none;
+    height:34px;
+    bottom:14px;
+    right:9px;
+    border-radius:22px;
+    width:220px;
+    box-sizing:border-box;
+    padding:0 18px; 
+    margin: 10px;
+    margin-left: 20px;
+    background: transparent;
+  }
+
+button{
+    height: 40px;
+    width: 220px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 26px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #401be7, #ec1dec);
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.container{
+    position: relative;
+    width: 320px;
+    max-width: 90%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+   background: #fcf8f6;
+   /* display: none; */
+}
+.fields{
+    border: 1px solid rgba(53, 53, 53, 0.452);
+    padding:10px 0px;
+    border-radius: 20px;
+    width: 260px;
+}
+.container h2{
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(to right, #401be7, #ec1dec);
+    position: absolute;
+    top: 0%;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 14px;
+    text-indent: 20px;
+    line-height: 40px;
+    color: #F8F8F8;
+}
+.container p{
+    font-size: small;
+    margin-bottom: 10px;
+    opacity: .9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 800px){
+    textarea{
+        border-radius: 50px;
+        height: 40px;
+        width: 90%;
+        margin-bottom: 10px;
+        padding: 10px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+    textarea::-webkit-scrollbar{
+        display: none;
+    }
+    section.chat__section{
+        position: relative;
+    }
+    body{
+        background:linear-gradient(to right,rgb(36, 9, 156) 10%,rgb(170, 2, 162));
+
+        
+    }
+}    
+
+@media only screen and (max-width: 360px){
+    textarea{
+        border-radius: 50px;
+        height: 40px;
+        width: 280px;
+        margin-bottom: 10px;
+        padding: 10px;
+
+    }
+
+
+}
+

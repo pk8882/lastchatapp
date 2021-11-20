@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wassup chat app</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="/single.png" alt="">
+            <h1>Signal</h1>
+            <div class="username">
+              <p></p> <span></span>
+            </div>
+        </div>
+        <div class="message__area">
+        </div>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+        </div>
+    </section>
+<!-- form code-->
+<div class="container">
+    <h2>Let's chat?- Online</h2>
+    <p>Please fill out the form below to start <br>
+    chatting with people and enjoy chatting.
+    </p>
+    
+    <form action="" id="join-us">
+      <div class="fields">
+        
+         <input placeholder="Your Name" type="text" class="name"/>
+      </span>
+      <br/>
+       
+         <input placeholder="Password" type="password"/>
+      <input type="text" placeholder="Phone Number"/>
+      <br>
+      
+      <button type="button">
+        Start chat
+      </button>
+    </div>
+    </form>
+    
+  </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
